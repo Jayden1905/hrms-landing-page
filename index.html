@@ -7,15 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Office HR Landing Page</title>
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css">
 </head>
 
 <body class="bg-black">
   <div class="relative">
-    <loader-component></loader-component>
+    <!-- <loader-component></loader-component> -->
     <div is="menu-layout"></div>
     <div id="home" is="app-container" class="text-white">
-      <hero-layout></hero-layout>
-      <div class="w-full h-screen"></div>
+      <hero-section></hero-section>
+      <section id="features">
+        <feature-section></feature-section>
+      </section>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
