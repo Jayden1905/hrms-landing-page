@@ -1,6 +1,6 @@
 import { gsap } from 'gsap'
 
-const menuList = [
+export const menuList = [
   { name: 'Home', link: 'home' },
   { name: 'Features', link: 'features' },
   { name: 'Pricing', link: 'pricing' },
