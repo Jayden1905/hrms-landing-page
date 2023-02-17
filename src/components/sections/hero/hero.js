@@ -28,9 +28,9 @@ const laptopView = `
 `
 
 const mobileView = `
-    <div class="mt-20 h-screen md:hidden flex flex-col md:flex-row gap-6">
-        <div class="overlay-mobile z-40 absolute w-full h-[80vh] bg-black origin-bottom"></div>
-        <div class="hero-section image w-full h-[40vh] bg-custom-black"></div>
+    <div class="mt-20 h-screen md:hidden flex flex-col md:flex-row gap-10">
+        <div class="overlay-mobile z-40 absolute w-full h-[90vh] bg-black origin-bottom"></div>
+        <div class="hero-section image w-full h-[50vh] bg-custom-black"></div>
         <div class="hero-section content flex flex-col w-full items-start gap-6">
             <h1 class="text-4xl font-bold leading-[3rem]">
                 ${heroTitle}

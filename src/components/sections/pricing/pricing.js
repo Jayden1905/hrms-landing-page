@@ -28,7 +28,7 @@ pricing.innerHTML = `
     <div class="pricing-section w-full h-full lg:h-screen mt-36 lg:mt-0 flex flex-col justify-center gap-14">
         <h1
             class="section-title hidden text-4xl md:text-6xl lg:text-7xl font-bold leading-[3rem] md:leading-[4rem] tracking-wide text-center w-full">
-            Pricing plans for users
+            Pricing Plans For Users
         </h1>
         <p class="section-body hidden text-center text-lg sm:text-xl font-light leading-8 tracking-wide">
             Our advanced HR HRIS system is designed to meet the needs of any organization, with easy customizations to accommodate different countries. If you need further information, please feel free to book a demo meeting with us for further clarifications.
@@ -38,7 +38,7 @@ pricing.innerHTML = `
               .map(
                 (plan) =>
                   `
-                    <div class="card w-full flex flex-col p-6 h-full bg-custom-black rounded-xl">
+                    <div class="card hidden w-full flex-col p-6 h-full bg-custom-black rounded-xl">
                         <h1 class="text-2xl text-center font-extrabold tracking-wider">${
                           plan.duration
                         }</h1>
@@ -106,12 +106,27 @@ class Pricing extends HTMLElement {
           { y: 0, opacity: 1 },
           '-=0.5'
         )
-        .fromTo(
-          cards,
-          { x: -100, opacity: 0 },
-          { x: 0, opacity: 1, stagger: 0.2 },
-          '-=0.5'
-        )
+
+      gsap.fromTo(
+        cards[1],
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        '-=0.5'
+      )
+
+      gsap.fromTo(
+        cards[0],
+        { x: 100, opacity: 0 },
+        { x: 0, opacity: 1 },
+        '-=0.4'
+      )
+
+      gsap.fromTo(
+        cards[2],
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1 },
+        '-=0.4'
+      )
 
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -119,10 +134,11 @@ class Pricing extends HTMLElement {
           body.classList.remove('hidden')
           cardContainer.classList.remove('hidden')
           cardContainer.classList.add('grid')
-          timeline.play()
           cards.forEach((card) => {
-            card.classList.add('animate__animated', 'animate__fadeInUp')
+            card.classList.remove('hidden')
+            card.classList.add('flex')
           })
+          timeline.play()
           observer.unobserve(section)
         }
       })

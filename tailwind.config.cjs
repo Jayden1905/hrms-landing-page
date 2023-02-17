@@ -10,6 +10,9 @@ module.exports = {
         'custom-black': '#191b1d',
         black: '#151515',
       },
+      fontFamily: {
+        ibm: ['IBM Plex Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
