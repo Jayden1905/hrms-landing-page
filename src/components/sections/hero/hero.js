@@ -47,7 +47,7 @@ const mobileView = `
 
 heroLayout.innerHTML = `
     <style>
-        @import url('../../../style.css');
+        @import url('/style.css');
     </style>
     ${laptopView}
     ${mobileView}

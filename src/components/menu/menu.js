@@ -54,7 +54,7 @@ const mobileMenuListLayout = `
 const navBarLayout = document.createElement('menu')
 navBarLayout.innerHTML = `
     <style>
-        @import url('../../style.css');
+        @import url('/style.css');
         @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="fixed backdrop-blur-md left-0 right-0 z-50 pt-6 pb-6">

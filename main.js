@@ -1,4 +1,5 @@
 import './src/index'
+import './style.css'
 
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual'
@@ -7,5 +8,3 @@ if (history.scrollRestoration) {
     window.scrollTo(0, 0)
   }
 }
-
-// history.scrollRestoration = 'manual'

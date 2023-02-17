@@ -1,7 +1,7 @@
 export const appContainer = document.createElement('rootLayout')
 appContainer.innerHTML = `
     <style>
-        @import url('../../style.css');
+        @import url('/style.css');
     </style>
     <div class="max-w-7xl mx-auto pt-4 px-4">
         <slot />

@@ -3,7 +3,7 @@ import gsap from 'gsap'
 const loader = document.createElement('loader')
 loader.innerHTML = `
     <style>
-        @import url('../../style.css');
+        @import url('/style.css');
         .loader .blinder-container {
             position: absolute;
             top: 0;
