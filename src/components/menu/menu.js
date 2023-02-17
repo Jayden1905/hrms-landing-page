@@ -8,9 +8,9 @@ const menuList = [
 ]
 
 const socialList = [
-  { name: 'Facebook', link: 'facebook' },
-  { name: 'Twitter', link: 'twitter' },
-  { name: 'Instagram', link: 'instagram' },
+  { name: 'Facebook', link: 'facebook', icon: 'fa-brands fa-facebook' },
+  { name: 'Twitter', link: 'twitter', icon: 'fa-brands fa-twitter' },
+  { name: 'Instagram', link: 'instagram', icon: 'fa-brands fa-instagram' },
 ]
 
 window.data = {
@@ -55,6 +55,7 @@ const navBarLayout = document.createElement('menu')
 navBarLayout.innerHTML = `
     <style>
         @import url('../../style.css');
+        @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="fixed backdrop-blur-md left-0 right-0 z-50 pt-6 pb-6">
       <ul class="header text-white flex justify-between items-center mx-auto max-w-7xl px-4">
@@ -79,16 +80,20 @@ navBarLayout.innerHTML = `
           <div class="flex justify-start items-start">
             ${mobileMenuListLayout}
           </div>
-          <ul class="mt-auto mb-10 flex flex-col px-4 justify-start items-start">
-            ${socialList.map((item) => {
-              return `
+          <ul class="mt-auto mb-10 flex flex-col gap-6 px-4 justify-start items-start">
+            ${socialList
+              .map((item) => {
+                return `
                     <div class="w-full h-full overflow-hidden">
-                      <li class="menu-item font-light cursor-pointer hover:opacity-70 text-white opacity-50 transition-all duration-300 ease-out">
-                          <a href="#${item.link}">${item.name}</a>
+                      <li class="menu-item text-2xl font-light cursor-pointer hover:opacity-100 text-white opacity-50 transition-all duration-300 ease-out">
+                          <a href="#${item.link}">
+                            <i class="${item.icon}"></i>
+                          </a>
                       </li>
                     </div>
                   `
-            })}
+              })
+              .join('')}
           </ul>
         </div>
     </div>

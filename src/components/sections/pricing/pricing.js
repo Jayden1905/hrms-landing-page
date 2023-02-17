@@ -9,19 +9,18 @@ const plans = [
   {
     duration: 'Six Months Billing',
     price: '60000',
-    features: ['All the features included', 'Customization of the system'],
+    features: ['All previous features included', 'Customization of the system'],
   },
   {
     duration: 'One Year Billing',
     price: '120000',
-    features: ['All the features included', 'Plus 3 extra months'],
+    features: ['All previous features included', '3 free months'],
   },
 ]
 
 const pricing = document.createElement('pricing')
 pricing.innerHTML = `
     <style>
-        @import url('/style.css');
         @import url('/style.css');
         @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
