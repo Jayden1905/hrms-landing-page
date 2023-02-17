@@ -30,7 +30,7 @@ feature.innerHTML = `
         @import url('/style.css');
         @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
-    <div class="feature-section mt-16 sm:mt-0 mb-16 w-full h-full sm:h-screen flex flex-col gap-6 md:gap-12 justify-center items-center">
+    <div class="feature-section w-full h-full lg:h-screen flex flex-col gap-6 md:gap-12 justify-center items-center">
         <h1
             class="hidden section-title text-4xl md:text-6xl lg:text-7xl font-bold leading-[3rem] md:leading-[4rem] tracking-wide text-center w-full md:w-[75%] lg:w-[60%]">
             Build and customize your own system
@@ -40,7 +40,7 @@ feature.innerHTML = `
             Our easy-to-use platform provides a complete solution for your HR needs,
             enabling you to manage your workforce with ease.
         </p>
-        <div class="grid-container hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6 gap-14">
+        <div class="grid-container hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6 gap-14">
            ${features
              .map(
                (feature) =>
@@ -79,7 +79,7 @@ class Feature extends HTMLElement {
     const handleIntersection = (entries) => {
       const timeline = gsap.timeline({
         defaults: {
-          duration: 0.5,
+          duration: 0.75,
           ease: 'power2.out',
         },
       })
@@ -99,18 +99,21 @@ class Feature extends HTMLElement {
             y: 100,
             opacity: 0,
           },
-          { y: 0, opacity: 1 }
+          { y: 0, opacity: 1 },
+          '-=0.5'
         )
         .fromTo(
           featureItems,
           { x: -100, opacity: 0 },
-          { x: 0, opacity: 1, stagger: 0.2 }
+          { x: 0, opacity: 1, stagger: 0.2 },
+          '-=0.5'
         )
 
       entries.map((entry) => {
         if (entry.isIntersecting) {
           title.classList.remove('hidden')
           body.classList.remove('hidden')
+          gridContainer.classList.add('grid')
           gridContainer.classList.remove('hidden')
           timeline.play()
           observer.unobserve(section)

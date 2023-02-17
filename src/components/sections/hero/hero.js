@@ -28,7 +28,7 @@ const laptopView = `
 `
 
 const mobileView = `
-    <div class="mt-20 h-full md:hidden flex flex-col md:flex-row gap-6">
+    <div class="mt-20 h-screen md:hidden flex flex-col md:flex-row gap-6">
         <div class="overlay-mobile z-40 absolute w-full h-[80vh] bg-black origin-bottom"></div>
         <div class="hero-section image w-full h-[40vh] bg-custom-black"></div>
         <div class="hero-section content flex flex-col w-full items-start gap-6">
@@ -38,7 +38,7 @@ const mobileView = `
             <p class="font-light leading-8 tracking-wide text-justify">
                 ${heroSlogan}
             </p>
-            <button type="button" class="font-bold text-sm rounded-full px-6 py-4 bg-blue-500 text-white hover:bg-blue-600">
+            <button type="button" class="font-bold rounded-full px-6 py-4 bg-blue-500 text-white hover:bg-blue-600">
                 Try our app for free
             </button>
         </div>

@@ -7,3 +7,5 @@ if (history.scrollRestoration) {
     window.scrollTo(0, 0)
   }
 }
+
+// history.scrollRestoration = 'manual'
