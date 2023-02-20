@@ -9,12 +9,16 @@ const plans = [
   {
     duration: 'Six Months Billing',
     price: '60000',
-    features: ['All previous features included', 'Customization of the system'],
+    features: ['All features included', 'Customization of the system'],
   },
   {
     duration: 'One Year Billing',
     price: '120000',
-    features: ['All previous features included', '3 free months'],
+    features: [
+      'All features included',
+      'Customization of the system',
+      '10% discount',
+    ],
   },
 ]
 
@@ -37,7 +41,7 @@ pricing.innerHTML = `
               .map(
                 (plan) =>
                   `
-                    <div class="card hidden w-full flex-col p-6 h-full bg-custom-black rounded-xl">
+                    <div class="card hidden w-full flex-col p-6 h-full bg-gray-100 rounded-xl">
                         <h1 class="text-2xl text-center font-extrabold tracking-wider">${
                           plan.duration
                         }</h1>
@@ -55,7 +59,7 @@ pricing.innerHTML = `
                                 (feature) =>
                                   `
                                     <p>
-                                        <i class="fa-solid fa-check p-[6px] mr-2 rounded-full bg-blue-500"></i>
+                                        <i class="fa-solid fa-check p-[6px] mr-2 rounded-full text-white bg-blue-500"></i>
                                         ${feature}
                                     </p>
                                 `

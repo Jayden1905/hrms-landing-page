@@ -26,7 +26,7 @@ const laptopMenuListLayout = `
                     item.name === 'Try it Free'
                       ? 'rounded-full px-6 py-2 bg-blue-500 !text-white hover:bg-blue-500'
                       : ''
-                  }hover:opacity-70 text-white font-bold transition-all duration-300 ease-out">
+                  }hover:opacity-70 text-black font-bold transition-all duration-300 ease-out">
                       <a href="#${item.link}">${item.name}</a>
                   </li>
                 `
@@ -41,7 +41,7 @@ const mobileMenuListLayout = `
           .map((item) => {
             return `
                   <div class="w-full h-full overflow-hidden">
-                    <li class="menu-item cursor-pointer text-3xl hover:opacity-70 text-white transition-all duration-300 ease-out">
+                    <li class="menu-item cursor-pointer text-3xl hover:opacity-70 text-black transition-all duration-300 ease-out">
                         <a href="#${item.link}">${item.name}</a>
                     </li>
                   </div>
@@ -58,7 +58,7 @@ navBarLayout.innerHTML = `
         @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="fixed backdrop-blur-md left-0 right-0 z-50 pt-6 pb-6">
-      <ul class="header text-white flex justify-between items-center mx-auto max-w-7xl px-4">
+      <ul class="header text-black flex justify-between items-center mx-auto max-w-7xl px-4">
           <div>
               <h1 class="text-3xl font-bold">Logo</h1>
           </div>
@@ -67,15 +67,15 @@ navBarLayout.innerHTML = `
           <div class="flex md:hidden">
             <div class="z-50">
               <button id="menu-btn" class="focus:outline-none flex flex-col gap-[5px] p-2">
-                <div class="bar bar-1 w-7 h-[2px] bg-white transition-all duration-300 ease-out delay-700"></div>
-                <div class="bar bar-2 w-7 h-[2px] bg-white transition-all duration-300 ease-out delay-700"></div>
-                <div class="bar bar-3 w-7 h-[2px] bg-white transition-all duration-300 ease-out delay-700"></div>
+                <div class="bar bar-1 w-7 h-[2px] bg-black transition-all duration-300 ease-out delay-700"></div>
+                <div class="bar bar-2 w-7 h-[2px] bg-black transition-all duration-300 ease-out delay-700"></div>
+                <div class="bar bar-3 w-7 h-[2px] bg-black transition-all duration-300 ease-out delay-700"></div>
               </button>
             </div>
           </div>
       </ul>
     </div>
-    <div id="hamburger" class="open fixed pt-36 hidden md:hidden transition-all duration-500 ease-out w-full inset-0 h-screen bg-[#191b1d] z-40">
+    <div id="hamburger" class="open fixed pt-36 hidden md:hidden transition-all duration-500 ease-out w-full inset-0 h-screen bg-gray-100 z-40">
         <div class="flex flex-col w-full h-full">
           <div class="flex justify-start items-start">
             ${mobileMenuListLayout}
@@ -85,7 +85,7 @@ navBarLayout.innerHTML = `
               .map((item) => {
                 return `
                     <div class="w-full h-full overflow-hidden">
-                      <li class="menu-item text-2xl font-light cursor-pointer hover:opacity-100 text-white opacity-50 transition-all duration-300 ease-out">
+                      <li class="menu-item text-2xl font-light cursor-pointer hover:opacity-100 text-black opacity-50 transition-all duration-300 ease-out">
                           <a href="#${item.link}">
                             <i class="${item.icon}"></i>
                           </a>

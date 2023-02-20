@@ -6,14 +6,14 @@ footer.innerHTML = `
         @import url('/style.css');
         @import url('/fontawesome-free-6.3.0-web/css/all.css');
     </style>
-    <footer class="p-4 text-lg bg-black rounded-lg text-center shadow md:flex md:items-center md:justify-between md:p-6">
-        <span class="text-gray-500 text-center dark:text-gray-400">
+    <footer class="p-4 text-lg bg-white rounded-lg text-renter md:flex md:items-center md:justify-between md:p-6">
+        <span class="text-black text-center">
             © 2023
             <a href="#" class="hover:underline">
                 Office HR
             </a>. All Rights Reserved.
         </span>
-        <ul class="flex flex-wrap items-center justify-center mt-3 text-gray-500 dark:text-gray-400 sm:mt-0">
+        <ul class="flex flex-wrap items-center justify-center mt-3 text-black sm:mt-0">
             ${menuList
               .map(
                 (item) =>

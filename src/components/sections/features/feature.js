@@ -35,7 +35,7 @@ feature.innerHTML = `
             class="hidden section-title text-4xl md:text-6xl lg:text-7xl font-bold leading-[3rem] md:leading-[4rem] tracking-wide text-center w-full md:w-[75%] lg:w-[60%]">
             Build and customize your own system
         </h1>
-        <p class="hidden tracking-widest section-body w-full md:w-[75%] lg:w-[55%] text-center leading-10 text-lg font-light">
+        <p class="hidden tracking-widest section-body w-full md:w-[75%] lg:w-[55%] text-center leading-10 text-lg">
             Streamline your HR management with our all-in-one HRMS system.
             Our easy-to-use platform provides a complete solution for your HR needs,
             enabling you to manage your workforce with ease.
@@ -50,7 +50,7 @@ feature.innerHTML = `
                             <img src="${feature.image}" alt="${feature.title}" class="w-full h-full object-cover object-center">
                         </div>
                         <div class="title font-bold text-xl">${feature.title}</div>
-                        <div class="body font-light">
+                        <div class="body">
                             ${feature.body}
                         </div>
                         <a href="#" class="text-blue-500 flex justify-center items-center gap-2">

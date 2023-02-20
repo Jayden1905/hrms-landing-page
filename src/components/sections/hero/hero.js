@@ -7,14 +7,14 @@ const heroSlogan =
 const heroLayout = document.createElement('heroLayout')
 const laptopView = `
     <div class="h-screen hidden md:flex justify-center items-center gap-8 mb-6">
-        <div class="overlay z-40 absolute w-full h-[40vh] bg-black origin-bottom"></div>
+        <div class="overlay z-40 absolute w-full h-[40vh] bg-white origin-bottom"></div>
         <div class="hero-section content flex flex-col w-full items-start gap-10">
             <div class="overflow-hidden w-full h-full">
                 <h1 class="hero-title lg:text-5xl text-4xl font-bold lg:leading-[3.5rem] leading-[2.5rem] tracking-wider">
                     ${heroTitle}
                 </h1>
             </div>
-            <p class="lg:text-lg font-light leading-[2rem] tracking-widest">
+            <p class="lg:text-lg leading-[2rem] tracking-widest">
                 ${heroSlogan}
             </p>
             <div class="flex gap-14 justify-center items-center">

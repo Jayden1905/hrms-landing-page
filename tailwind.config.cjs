@@ -5,11 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'logo-red': '#e01f21',
-        'logo-blue': '#1b236c',
-        'logo-light-blue': '#298cff',
         'custom-black': '#191b1d',
-        black: '#151515',
       },
       fontFamily: {
         ibm: ['IBM Plex Sans', 'sans-serif'],

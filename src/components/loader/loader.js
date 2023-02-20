@@ -12,7 +12,7 @@ loader.innerHTML = `
             display: flex;
         }
         .loader .blinder-container .blinder {
-            background: #191b1d;
+            background: #f3f4f6;
             height: 100vh;
             flex: 1;
             transform-origin: bottom;
@@ -55,13 +55,13 @@ loader.innerHTML = `
             </defs>
 
             <mask id="mask0_1_32" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="86" height="86">
-                <circle cx="43" cy="43.1161" r="42.4299" fill="white"/>
+                <circle cx="43" cy="43.1161" r="42.4299" fill="black"/>
             </mask>
 
             <g mask="url(#mask0_1_32)" filter="url(#goo)">
-                <circle cx="43" cy="43.1161" r="40.4299" stroke="white" stroke-width="4"/>
-                <circle cx="43" cy="-25.3367" r="45.8453" fill="white"/>
-                <path class="drip-loader" d="M43.9141 -15.413C43.5625 -16.2057 42.4375 -16.2057 42.0859 -15.413L34.2829 2.17821C33.4045 3.67557 32.9009 5.41937 32.9009 7.28079C32.9009 12.8584 37.4224 17.3799 43 17.3799C48.5776 17.3799 53.0991 12.8584 53.0991 7.28079C53.0991 5.41928 52.5954 3.6754 51.717 2.17799L43.9141 -15.413Z" fill="white"/>
+                <circle cx="43" cy="43.1161" r="40.4299" stroke="black" stroke-width="4"/>
+                <circle cx="43" cy="-25.3367" r="45.8453" fill="black"/>
+                <path class="drip-loader" d="M43.9141 -15.413C43.5625 -16.2057 42.4375 -16.2057 42.0859 -15.413L34.2829 2.17821C33.4045 3.67557 32.9009 5.41937 32.9009 7.28079C32.9009 12.8584 37.4224 17.3799 43 17.3799C48.5776 17.3799 53.0991 12.8584 53.0991 7.28079C53.0991 5.41928 52.5954 3.6754 51.717 2.17799L43.9141 -15.413Z" fill="black"/>
             </g>
         </svg>
     </div>

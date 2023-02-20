@@ -133,7 +133,7 @@ brand.innerHTML = `
 
           h1:before,
           h1:after {
-            background-color: white;
+            background-color: black;
             content: "";
             display: inline-block;
             height: 1px;
@@ -175,6 +175,10 @@ brand.innerHTML = `
             animation: scroll 40s linear infinite;
             width: calc(250px * 14);
           }
+
+          .divider {
+            background: black;
+          }
     </style>
     <div class="w-full h-full my-36 lg:mt-0">
         <h1 class="header text-lg">
@@ -196,7 +200,7 @@ brand.innerHTML = `
                 </div>
             </div>
         </div>
-        <div class="bg-white opacity-50 border-[0.5px] w-full md:w-[60%] mx-auto"></div>
+        <div class="divider opacity-100 border-[1px] w-full md:w-[60%] mx-auto"></div>
     </div>
 `
 
