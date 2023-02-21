@@ -19,7 +19,7 @@ const laptopView = `
             </p>
             <div class="flex gap-14 justify-center items-center">
                 <button type="button" class="font-bold rounded-full px-8 py-3 bg-blue-500 text-white hover:bg-blue-600">
-                    Get Started
+                    <a href="#features">Get Started</a>
                 </button>
             </div>
         </div>
@@ -29,7 +29,7 @@ const laptopView = `
 
 const mobileView = `
     <div class="mt-20 h-screen md:hidden flex flex-col md:flex-row gap-10">
-        <div class="overlay-mobile z-40 absolute w-full h-[90vh] bg-black origin-bottom"></div>
+        <div class="overlay-mobile z-40 absolute w-full h-[90vh] bg-white origin-bottom"></div>
         <div class="hero-section image w-full h-[50vh] bg-custom-black"></div>
         <div class="hero-section content flex flex-col w-full items-start gap-6">
             <h1 class="text-4xl font-bold leading-[3rem]">
@@ -38,8 +38,8 @@ const mobileView = `
             <p class="font-light leading-8 tracking-wide text-justify">
                 ${heroSlogan}
             </p>
-            <button type="button" class="font-bold rounded-full px-6 py-4 bg-blue-500 text-white hover:bg-blue-600">
-                Try our app for free
+            <button type="button" class="font-bold rounded-full px-6 py-3 bg-blue-500 text-white hover:bg-blue-600">
+                <a href="#features">Get Started</a>
             </button>
         </div>
     </div>

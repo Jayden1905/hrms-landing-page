@@ -200,7 +200,7 @@ brand.innerHTML = `
                 </div>
             </div>
         </div>
-        <div class="divider opacity-100 border-[1px] w-full md:w-[60%] mx-auto"></div>
+        <div class="divider opacity-100 h-[1px] w-full md:w-[60%] mx-auto"></div>
     </div>
 `
 

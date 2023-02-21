@@ -52,7 +52,7 @@ pricing.innerHTML = `
                             </h1>
                             <span class="font-bold text-xl opacity-70">MMK</span>
                         </div>
-                        <div class="w-full h-[2px] bg-white opacity-20 mt-14"></div>
+                        <div class="w-full h-[2px] bg-black opacity-20 mt-14"></div>
                         <div class="flex flex-col gap-4 mt-10 mb-4">
                             ${plan.features
                               .map(
