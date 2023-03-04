@@ -124,8 +124,8 @@ const brandLogos = [
 const brand = document.createElement('brand')
 brand.innerHTML = `
     <style>
-        @import url('/style.css');
-        @import url('/fontawesome-free-6.3.0-web/css/all.css');
+        @import url('style.css');
+        @import url('fontawesome-free-6.3.0-web/css/all.css');
         h1 {
             overflow: hidden;
             text-align: center;
@@ -188,15 +188,15 @@ brand.innerHTML = `
             <div class="slider m-auto overflow-hidden relative w-auto">
                 <div class="slide-track flex">
                     ${brandLogos
-                      .map(
-                        (logo) =>
-                          `
+    .map(
+      (logo) =>
+        `
                             <div class="slide w-full h-full">
                                 <p>${logo.name}</p>
                             </div>
                         `
-                      )
-                      .join('')}
+    )
+    .join('')}
                 </div>
             </div>
         </div>

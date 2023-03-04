@@ -25,8 +25,8 @@ const plans = [
 const pricing = document.createElement('pricing')
 pricing.innerHTML = `
     <style>
-        @import url('/style.css');
-        @import url('/fontawesome-free-6.3.0-web/css/all.css');
+        @import url('style.css');
+        @import url('fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="pricing-section w-full h-full lg:h-screen mt-36 lg:mt-0 flex flex-col justify-center gap-14">
         <h1
@@ -38,13 +38,12 @@ pricing.innerHTML = `
         </p>
         <div class="card-container hidden mt-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             ${plans
-              .map(
-                (plan) =>
-                  `
+    .map(
+      (plan) =>
+        `
                     <div class="card hidden w-full flex-col p-6 h-full bg-gray-100 rounded-xl">
-                        <h1 class="text-2xl text-center font-extrabold tracking-wider">${
-                          plan.duration
-                        }</h1>
+                        <h1 class="text-2xl text-center font-extrabold tracking-wider">${plan.duration
+        }</h1>
                         <p class="mt-6 text-center text-lg opacity-70 tracking-widest">Including all features with</p>
                         <div class="mt-16 flex mx-auto items-end gap-1">
                             <h1 class="text-4xl font-bold">
@@ -55,21 +54,21 @@ pricing.innerHTML = `
                         <div class="w-full h-[2px] bg-black opacity-20 mt-14"></div>
                         <div class="flex flex-col gap-4 mt-10 mb-4">
                             ${plan.features
-                              .map(
-                                (feature) =>
-                                  `
+          .map(
+            (feature) =>
+              `
                                     <p>
                                         <i class="fa-solid fa-check p-[6px] mr-2 rounded-full text-white bg-blue-500"></i>
                                         ${feature}
                                     </p>
                                 `
-                              )
-                              .join('')}
+          )
+          .join('')}
                         </div>
                     </div>
                 `
-              )
-              .join('')}
+    )
+    .join('')}
         </div>
     </div>
 `

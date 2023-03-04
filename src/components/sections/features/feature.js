@@ -27,8 +27,8 @@ const features = [
 const feature = document.createElement('feature')
 feature.innerHTML = `
     <style>
-        @import url('/style.css');
-        @import url('/fontawesome-free-6.3.0-web/css/all.css');
+        @import url('style.css');
+        @import url('fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="feature-section w-full h-full lg:h-screen flex flex-col gap-6 md:gap-12 justify-center items-center">
         <h1
@@ -42,9 +42,9 @@ feature.innerHTML = `
         </p>
         <div class="grid-container hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6 gap-14">
            ${features
-             .map(
-               (feature) =>
-                 `
+    .map(
+      (feature) =>
+        `
                     <div class="feature-item text-center w-full flex flex-col gap-3 justify-center items-center">
                         <div class="image w-20 h-20 mb-2">
                             <img src="${feature.image}" alt="${feature.title}" class="w-full h-full object-cover object-center">
@@ -59,8 +59,8 @@ feature.innerHTML = `
                         </a>
                     </div>
                 `
-             )
-             .join('')}
+    )
+    .join('')}
         </div>
     </div>
 `

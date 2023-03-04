@@ -20,42 +20,41 @@ window.data = {
 const laptopMenuListLayout = `
       <div id="menu-items" class="hidden md:flex gap-10 justify-center items-center">
         ${menuList
-          .map((item) => {
-            return `
-                  <li class="cursor-pointer ${
-                    item.name === 'Try it Free'
-                      ? 'rounded-full px-6 py-2 bg-blue-500 !text-white hover:bg-blue-500'
-                      : ''
-                  }hover:opacity-70 text-black font-bold transition-all duration-300 ease-out">
+    .map((item) => {
+      return `
+                  <li class="cursor-pointer ${item.name === 'Try it Free'
+          ? 'rounded-full px-6 py-2 bg-blue-500 !text-white hover:bg-blue-500'
+          : ''
+        }hover:opacity-70 text-black font-bold transition-all duration-300 ease-out">
                       <a href="#${item.link}">${item.name}</a>
                   </li>
                 `
-          })
-          .join('')}
+    })
+    .join('')}
       </div>
 `
 
 const mobileMenuListLayout = `
       <div id="menu-items" class="flex flex-col gap-10 px-4">
         ${menuList
-          .map((item) => {
-            return `
+    .map((item) => {
+      return `
                   <div class="w-full h-full overflow-hidden">
                     <li class="menu-item cursor-pointer text-3xl hover:opacity-70 text-black transition-all duration-300 ease-out">
                         <a href="#${item.link}">${item.name}</a>
                     </li>
                   </div>
                 `
-          })
-          .join('')}
+    })
+    .join('')}
       </div>
 `
 
 const navBarLayout = document.createElement('menu')
 navBarLayout.innerHTML = `
     <style>
-        @import url('/style.css');
-        @import url('/fontawesome-free-6.3.0-web/css/all.css');
+        @import url('style.css');
+        @import url('fontawesome-free-6.3.0-web/css/all.css');
     </style>
     <div class="fixed backdrop-blur-md left-0 right-0 z-50 pt-6 pb-6">
       <ul class="header text-black flex justify-between items-center mx-auto max-w-7xl px-4">
@@ -82,8 +81,8 @@ navBarLayout.innerHTML = `
           </div>
           <ul class="mt-auto mb-10 flex flex-col gap-6 px-4 justify-start items-start">
             ${socialList
-              .map((item) => {
-                return `
+    .map((item) => {
+      return `
                     <div class="w-full h-full overflow-hidden">
                       <li class="menu-item text-2xl font-light cursor-pointer hover:opacity-100 text-black opacity-50 transition-all duration-300 ease-out">
                           <a href="#${item.link}">
@@ -92,8 +91,8 @@ navBarLayout.innerHTML = `
                       </li>
                     </div>
                   `
-              })
-              .join('')}
+    })
+    .join('')}
           </ul>
         </div>
     </div>
@@ -149,7 +148,7 @@ class MenuLayout extends HTMLDivElement {
       .to(hamburger, { x: '-100%' })
 
     menuItem.forEach((item) => {
-      item.addEventListener('click', function () {
+      item.addEventListener('click', function() {
         hamburger.classList.remove('hidden')
         timeline.reversed(!timeline.reversed())
 
@@ -158,7 +157,7 @@ class MenuLayout extends HTMLDivElement {
       })
     })
 
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function() {
       hamburger.classList.remove('hidden')
       timeline.reversed(!timeline.reversed())
 
