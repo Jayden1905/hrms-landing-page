@@ -75,7 +75,6 @@ main a {
   font-weight: 500;
   background: #fff;
   border-radius: 3.125rem;
-  transition: 0.3s ease-in-out;
 }
 
 main > div > a {

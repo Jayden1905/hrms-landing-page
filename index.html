@@ -1,110 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office HR Landing Page</title>
+    <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Office HR Landing Page</title>
-  <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/style.css" />
-</head>
-
-<body class="bg-white">
-  <div class="relative font-ibm">
-    <loader-component></loader-component>
-    <div is="menu-layout"></div>
-    <div id="home" is="app-container" class="text-black">
-      <hero-section></hero-section>
-      <section id="features">
-        <feature-section></feature-section>
-      </section>
-      <section id="details">
-        <main class="mt-36 lg:mt-0">
-          <div>
-            <span class="discover hidden">discover</span>
-            <h1 class="section-title hidden">Office HR HRMS Features</h1>
-            <hr class="section-title-divider hidden" />
-            <p class="hidden section-body text-lg sm:text-xl font-light leading-8 tracking-wide">
-              Office HR provides an all-in-one human resource solution for
-              efficient HR operations.
-            </p>
-            <a href="#" class="hidden download">download app</a>
-          </div>
-          <div class="hidden swiper swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide swiper-slide--one">
-                <div>
-                  <h2>Attendance</h2>
-                  <p>
-                    Make an easy check-in/out with Office HR HRMS App. Auto,
-                    QR scan, Office or Remote check-in/out will make your
-                    company more structured & save your time.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-slide--two">
-                <div>
-                  <h2>Leave</h2>
-                  <p>
-                    Check your leave availability & request a leave with your
-                    mobile phone. No need to fill a form to request leave if
-                    you have Office HR HRMS App. Instant leave request &
-                    approval.
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide swiper-slide--three">
-                <div>
-                  <h2>Department Directory</h2>
-                  <p>
-                    Arrange your organization's internal structure more
-                    adequately with Office HR HRMS. Office HR Department
-                    Directory will show to employees who is in-charge to whom.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-slide--four">
-                <div>
-                  <h2>Announcement</h2>
-                  <p>
-                    Are you still sending emails to your employees to inform
-                    them of something? The Office HRMS software will help you
-                    track & monitor whether or not all employees received the
-                    announcement.
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide swiper-slide--five">
-                <div>
-                  <h2>Payslip</h2>
-                  <p>
-                    Collect your monthly payslip in your mobiles. Office HR
-                    will enhance the transparency between employer & employee.
-                    Every employee can view the detailed payslip with all
-                    additions & deductions with Office HR App.
-                  </p>
-                </div>
-              </div>
+  <body class="bg-white">
+    <div class="relative font-ibm">
+      <loader-component></loader-component>
+      <div is="menu-layout"></div>
+      <div id="home" is="app-container" class="text-black">
+        <hero-section></hero-section>
+        <section id="features">
+          <feature-section></feature-section>
+        </section>
+        <section id="details">
+          <main class="mt-36 lg:mt-0">
+            <div>
+              <span class="discover hidden">discover</span>
+              <h1 class="section-title hidden">Office HR HRMS Features</h1>
+              <hr class="section-title-divider hidden" />
+              <p
+                class="hidden section-body text-lg sm:text-xl font-light leading-8 tracking-wide"
+              >
+                Office HR provides an all-in-one human resource solution for
+                efficient HR operations.
+              </p>
+              <a href="#" class="hidden download transition-colors duration-300"
+                >download app</a
+              >
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </main>
-      </section>
-      <section id="pricing">
-        <pricing-section></pricing-section>
-      </section>
-      <section id="brands">
-        <brands-section></brands-section>
-      </section>
-      <footer-section></footer-section>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script type="module" src="/main.js"></script>
-</body>
+            <div class="hidden swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div>
+                    <h2>Attendance</h2>
+                    <p>
+                      Make an easy check-in/out with Office HR HRMS App. Auto,
+                      QR scan, Office or Remote check-in/out will make your
+                      company more structured & save your time.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div>
+                    <h2>Leave</h2>
+                    <p>
+                      Check your leave availability & request a leave with your
+                      mobile phone. No need to fill a form to request leave if
+                      you have Office HR HRMS App. Instant leave request &
+                      approval.
+                    </p>
+                  </div>
+                </div>
 
+                <div class="swiper-slide swiper-slide--three">
+                  <div>
+                    <h2>Department Directory</h2>
+                    <p>
+                      Arrange your organization's internal structure more
+                      adequately with Office HR HRMS. Office HR Department
+                      Directory will show to employees who is in-charge to whom.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                  <div>
+                    <h2>Announcement</h2>
+                    <p>
+                      Are you still sending emails to your employees to inform
+                      them of something? The Office HRMS software will help you
+                      track & monitor whether or not all employees received the
+                      announcement.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide--five">
+                  <div>
+                    <h2>Payslip</h2>
+                    <p>
+                      Collect your monthly payslip in your mobiles. Office HR
+                      will enhance the transparency between employer & employee.
+                      Every employee can view the detailed payslip with all
+                      additions & deductions with Office HR App.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </main>
+        </section>
+        <section id="pricing">
+          <pricing-section></pricing-section>
+        </section>
+        <section id="brands">
+          <brands-section></brands-section>
+        </section>
+        <footer-section></footer-section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
