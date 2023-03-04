@@ -2,23 +2,23 @@ import { gsap } from 'gsap'
 
 const features = [
   {
-    title: 'Attendance Management',
+    title: 'Increased Efficiency',
     image: '/attendance.png',
-    body: 'Analyze the employees real-time attendance status with our attendance feature.',
+    body: 'Automates repetitive and time-consuming tasks and focus on strategic initiatives.',
     link: '#',
     icon: 'fa-solid fa-arrow-up-right-from-square',
   },
   {
-    title: 'Leave Management',
-    image: '/leave.png',
-    body: 'Observe the leave history of each employee in your company easily.',
+    title: 'Increased Accuracy',
+    image: '/accuracy.png',
+    body: 'Reduces the likelihood of errors and inaccuracies in HR-related data.',
     link: '#',
     icon: 'fa-solid fa-arrow-up-right-from-square',
   },
   {
-    title: 'Employee Management',
+    title: 'Better Employee Experience',
     image: '/employee.png',
-    body: "Manage and update your employees' individual profiles within minutes.",
+    body: 'Provides employees with a better experience and a more positive view of the company.',
     link: '#',
     icon: 'fa-solid fa-arrow-up-right-from-square',
   },
@@ -35,7 +35,7 @@ feature.innerHTML = `
             class="hidden section-title text-4xl md:text-6xl lg:text-7xl font-bold leading-[3rem] md:leading-[4rem] tracking-wide text-center w-full md:w-[75%] lg:w-[60%]">
             Build and customize your own system
         </h1>
-        <p class="hidden tracking-widest section-body w-full md:w-[75%] lg:w-[55%] text-center leading-10 text-lg">
+        <p class="hidden tracking-widest section-body w-full md:w-[75%] lg:w-[55%] text-center leading-8 text-lg font-light">
             Streamline your HR management with our all-in-one HRMS system.
             Our easy-to-use platform provides a complete solution for your HR needs,
             enabling you to manage your workforce with ease.
@@ -70,6 +70,7 @@ class Feature extends HTMLElement {
     super()
     const shadow = this.attachShadow({ mode: 'open' })
     shadow.appendChild(feature)
+
     const section = shadow.querySelector('.feature-section')
     const title = shadow.querySelector('.section-title')
     const body = shadow.querySelector('.section-body')
