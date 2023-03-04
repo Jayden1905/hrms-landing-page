@@ -49,8 +49,6 @@ const sectionBody = document.getElementsByClassName('section-body')
 const download = document.getElementsByClassName('download')
 const swiperContainer = document.getElementsByClassName('swiper-container')
 
-console.log(discover.item(0))
-
 const handleIntersection = (entries) => {
   const timeline = gsap.timeline({
     defaults: {
