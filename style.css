@@ -10,11 +10,9 @@ html {
 
 main {
   position: relative;
-  width: calc(min(90rem, 90%));
   margin: 0 auto;
   min-height: 100vh;
   column-gap: 3rem;
-  padding-block: min(20vh, 3rem);
 }
 
 .bg {
@@ -110,7 +108,7 @@ main > div > a:hover {
   height: 28.125rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: self-start;
 }
 
@@ -193,8 +191,15 @@ main > div > a:hover {
     opacity: 0.1;
   }
 }
+
 @media screen and (min-width: 93.75rem) {
   .swiper {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main > div h1 {
+    font-size: 2.5rem;
   }
 }

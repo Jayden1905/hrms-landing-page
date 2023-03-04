@@ -54,13 +54,13 @@ console.log(discover.item(0))
 const handleIntersection = (entries) => {
   const timeline = gsap.timeline({
     defaults: {
-      duration: 0.75,
+      duration: 0.65,
       ease: 'power2.out',
     },
   })
 
   timeline
-    .fromTo(discover, { y: 100, opacity: 0 }, { y: 0, opacity: 1 })
+    .fromTo(discover, { y: 200, opacity: 0 }, { y: 0, opacity: 1 })
     .fromTo(sectionTitle, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, '-=0.5')
     .fromTo(
       sectionTitleDivider,

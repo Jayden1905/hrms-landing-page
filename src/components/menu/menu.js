@@ -2,7 +2,7 @@ import { gsap } from 'gsap'
 
 export const menuList = [
   { name: 'Home', link: 'home' },
-  { name: 'Features', link: 'features' },
+  { name: 'Features', link: 'details' },
   { name: 'Pricing', link: 'pricing' },
   { name: 'Try it Free', link: 'tryitfree' },
 ]
